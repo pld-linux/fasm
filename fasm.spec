@@ -5,12 +5,12 @@
 Summary:	Flat asembler
 Summary(pl):	"P³aski" assembler
 Name:		fasm
-Version:	1.54
+Version:	1.55
 Release:	1
 License:	distributable
 Group:		Development/Tools
 Source0:	http://flatassembler.net/%{name}-%{version}.tar.gz
-# Source0-md5:	407df366e89a4229f7689514d1d3ddbb
+# Source0-md5:	bcc89a793b4ec36845b1df2eb250829a
 URL:		http://flatassembler.net/
 %if %{without bootstrap}
 BuildRequires:	fasm
