@@ -1,5 +1,8 @@
+#
+# Conditional build:
 %bcond_with	bootstrap 	# use included binary
-Summary:	Flat assembler
+#
+Summary:	Flat asembler
 Summary(pl):	"P³aski" assembler
 Name:		fasm
 Version:	1.54
@@ -28,13 +31,13 @@ size. The flat assembler is self-compilable and the full source code
 is included.
 
 %description -l pl
-P³aski assembler jest szybkim i efektywnym, samo-assembluj±cy siê
-assemblerem 80x86 dla DOS, Windows i Linux. Aktualnie obs³uguje
-wszystkie instrukcje 8086-80486/Pentium z rozszerzeniami MMX, SSE,
-SSE2, SSE3 i 3DNow! , mo¿e produkowaæ programy w formacie binarnym,
-MZ, PE, COFF lub ELF. Zawiera potê¿ne, ale proste wsparcie dla
-makroinstrukcji oraz wielokrotnie optymalizuje kod dla rozmiaru.
-P³aski assembler potrafi sam siê skompilowaæ oraz zawiera pe³en kod
+P³aski asembler jest szybkim i efektywnym, samo-asembluj±cy siê
+asemblerem 80x86 dla systemów DOS, Windows i Linux. Aktualnie
+obs³uguje wszystkie instrukcje 8086-80486/Pentium z rozszerzeniami
+MMX, SSE, SSE2, SSE3 i 3DNow!, mo¿e produkowaæ programy w formacie
+binarnym, MZ, PE, COFF lub ELF. Zawiera potê¿ne, ale proste wsparcie
+dla makroinstrukcji oraz wielokrotnie optymalizuje kod dla rozmiaru.
+P³aski asembler potrafi sam siê skompilowaæ oraz zawiera pe³en kod
 ¼ród³owy.
 
 %prep
@@ -52,6 +55,7 @@ chmod +x %{name}
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 install -D source/Linux/%{name} $RPM_BUILD_ROOT%{_bindir}/%{name}
 
 %clean
