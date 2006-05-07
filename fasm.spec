@@ -1,16 +1,16 @@
 #
 # Conditional build:
-%bcond_with	bootstrap 	# use included binary
+%bcond_without	bootstrap 	# don't use included binary
 #
 Summary:	Flat asembler
 Summary(pl):	"P³aski" assembler
 Name:		fasm
-Version:	1.64
+Version:	1.66
 Release:	1
 License:	distributable
 Group:		Development/Tools
 Source0:	http://flatassembler.net/%{name}-%{version}.tgz
-# Source0-md5:	5f6642679611f00b53fcadd69348e1b5
+# Source0-md5:	f5cb8e91bfc53d0a1102790a64c80153
 URL:		http://flatassembler.net/
 %if %{without bootstrap}
 BuildRequires:	fasm
