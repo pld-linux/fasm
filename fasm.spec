@@ -12,7 +12,7 @@ Group:		Development/Tools
 Source0:	http://flatassembler.net/%{name}-%{version}.tgz
 # Source0-md5:	f5cb8e91bfc53d0a1102790a64c80153
 URL:		http://flatassembler.net/
-%if %{without bootstrap}
+%if !%{with bootstrap}
 BuildRequires:	fasm
 %endif
 ExclusiveArch:	%{ix86}
@@ -44,7 +44,7 @@ P³aski asembler potrafi sam siê skompilowaæ oraz zawiera pe³en kod
 %setup -q -n %{name}
 
 %build
-%if %{without bootstrap}
+%if !%{with bootstrap}
 ASM=%{name}
 %else
 ASM=../../%{name}
