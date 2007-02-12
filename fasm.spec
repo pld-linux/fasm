@@ -3,7 +3,7 @@
 %bcond_without	bootstrap 	# don't use included binary
 #
 Summary:	Flat asembler
-Summary(pl.UTF-8):   "Płaski" assembler
+Summary(pl.UTF-8):	"Płaski" assembler
 Name:		fasm
 Version:	1.66
 Release:	1
