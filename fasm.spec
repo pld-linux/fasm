@@ -3,7 +3,7 @@
 %bcond_without	bootstrap 	# don't use included binary
 #
 Summary:	Flat asembler
-Summary(pl):	"P³aski" assembler
+Summary(pl.UTF-8):   "PÅ‚aski" assembler
 Name:		fasm
 Version:	1.66
 Release:	1
@@ -30,15 +30,15 @@ support and does multiple passes to optimize the instruction codes for
 size. The flat assembler is self-compilable and the full source code
 is included.
 
-%description -l pl
-P³aski asembler jest szybkim i efektywnym, samo-asembluj±cy siê
-asemblerem 80x86 dla systemów DOS, Windows i Linux. Aktualnie
-obs³uguje wszystkie instrukcje 8086-80486/Pentium z rozszerzeniami
-MMX, SSE, SSE2, SSE3 i 3DNow!, mo¿e produkowaæ programy w formacie
-binarnym, MZ, PE, COFF lub ELF. Zawiera potê¿ne, ale proste wsparcie
+%description -l pl.UTF-8
+PÅ‚aski asembler jest szybkim i efektywnym, samo-asemblujÄ…cy siÄ™
+asemblerem 80x86 dla systemÃ³w DOS, Windows i Linux. Aktualnie
+obsÅ‚uguje wszystkie instrukcje 8086-80486/Pentium z rozszerzeniami
+MMX, SSE, SSE2, SSE3 i 3DNow!, moÅ¼e produkowaÄ‡ programy w formacie
+binarnym, MZ, PE, COFF lub ELF. Zawiera potÄ™Å¼ne, ale proste wsparcie
 dla makroinstrukcji oraz wielokrotnie optymalizuje kod dla rozmiaru.
-P³aski asembler potrafi sam siê skompilowaæ oraz zawiera pe³en kod
-¼ród³owy.
+PÅ‚aski asembler potrafi sam siÄ™ skompilowaÄ‡ oraz zawiera peÅ‚en kod
+ÅºrÃ³dÅ‚owy.
 
 %prep
 %setup -q -n %{name}
