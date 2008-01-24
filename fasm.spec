@@ -12,13 +12,11 @@ Group:		Development/Tools
 Source0:	http://flatassembler.net/%{name}-%{version}.tgz
 # Source0-md5:	f5cb8e91bfc53d0a1102790a64c80153
 URL:		http://flatassembler.net/
-%if !%{with bootstrap}
+%if %{without bootstrap}
 BuildRequires:	fasm
 %endif
 ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%define		no_install_post_strip	1
 
 %description
 The flat assembler is a fast and efficient self-assembling 80x86
@@ -44,7 +42,7 @@ Płaski asembler potrafi sam się skompilować oraz zawiera pełen kod
 %setup -q -n %{name}
 
 %build
-%if !%{with bootstrap}
+%if %{without bootstrap}
 ASM=%{name}
 %else
 ASM=../../%{name}
